@@ -10,6 +10,6 @@ include address-field
 
 mixin labelled-address-field(args)
 	.form-group
-		label(for=attributes.id ? (attributes.id + '_street1') : null).col-sm-3!= args.label
+		label(for=attributes.id ? (attributes.id + '_street1') : null).col-sm-3= args.label
 		.col-sm-9
 			+address-field(args)(id=attributes.id, class=attributes.class)

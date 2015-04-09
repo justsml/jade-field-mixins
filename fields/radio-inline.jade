@@ -1,7 +1,7 @@
 //- Radio Inline
 //- 
 //- Accepted arguments:
-//- * radiolabel (String)
+//- * label (String)
 //- * name (String)
 //- * value (String)
 //- * checked (Boolean)
@@ -16,4 +16,4 @@ mixin radio-inline(args)
 			checked=args.checked
 			disabled=args.disabled)
 		|  
-		!= args.radiolabel
+		= args.label

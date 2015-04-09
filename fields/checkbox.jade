@@ -1,7 +1,7 @@
 //- Checkbox
 //- 
 //- Accepted arguments:
-//- * checkboxlabel (String)
+//- * label (String)
 //- * name (String)
 //- * value (String) : defaults to "true"
 //- * checked (Boolean)
@@ -15,4 +15,4 @@ mixin checkbox(args)
 			value=args.value ? args.value : 'true'
 			checked=args.checked
 			disabled=args.disabled)
-		!= args.checkboxlabel
+		= args.label

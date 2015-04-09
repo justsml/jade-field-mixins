@@ -1,7 +1,7 @@
 //- Checkbox Inline
 //- 
 //- Accepted arguments:
-//- * checkboxlabel (String)
+//- * label (String)
 //- * name (String)
 //- * value (String) : defaults to "true"
 //- * checked (Boolean)
@@ -16,4 +16,4 @@ mixin checkbox-inline(args)
 			checked=args.checked
 			disabled=args.disabled)
 		|  
-		!= args.checkboxlabel
+		= args.label

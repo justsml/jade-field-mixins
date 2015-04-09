@@ -1,0 +1,22 @@
+{
+  "name": "jade-field-mixins",
+  "version": "0.0.3",
+  "description": "Field Mixins ============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justsml/jade-field-mixins.git"
+  },
+  "author": "Dan Levy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justsml/jade-field-mixins/issues"
+  },
+  "homepage": "https://github.com/justsml/jade-field-mixins",
+  "dependencies": {
+    "jade": "^1.9.2"
+  }
+}

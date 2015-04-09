@@ -1,7 +1,7 @@
 //- Radio
 //- 
 //- Accepted arguments:
-//- * radiolabel (String)
+//- * label (String)
 //- * name (String)
 //- * value (String)
 //- * checked (Boolean)
@@ -15,4 +15,4 @@ mixin radio(args)
 			value=args.value
 			checked=args.checked
 			disabled=args.disabled)
-		!= args.radiolabel
+		= args.label

@@ -3,6 +3,7 @@
 //- Used inside '.form-horizontal' to display a label left of the textarea
 //- 
 //- Accepted arguments:
+//- * title (String) - Add label above field, full width
 //- * label (String)
 //- * textarea args (name, value, placeholder)
 
@@ -10,6 +11,12 @@ include textarea
 
 mixin labelled-textarea(args)
 	.form-group
-		label(for=attributes.id ? attributes.id : null).col-sm-3!= args.label
-		.col-sm-9
-			+textarea(args)(id=attributes.id,class=attributes.class)
+		if args.title
+			label(for=attributes.id ? attributes.id : null).col-xs-12= args.title
+		if args.label
+			label(for=attributes.id ? attributes.id : null).col-sm-3= args.label
+			.col-sm-9
+				+textarea(args)(id=attributes.id,class=attributes.class)
+		else
+			.col-xs-12
+				+textarea(args)(id=attributes.id,class=attributes.class)	
